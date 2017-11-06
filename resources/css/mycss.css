@@ -1,0 +1,413 @@
+body {
+	background-image: url("/resources/images/sakura.png");
+	background-repeat: repeat;
+}
+div.layer {
+	background-color: #f8f8f8;	
+	opacity: 1.00;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 0.5%;
+	border: 2px solid pink;
+	border-radius: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+}
+@keyframes colorfade {
+    0%  {color: SlateBlue;}
+    14% {color: red;}
+    28% {color: orange;}
+    42% {color: yellow;}
+	56% {color: green;}
+	70% {color: blue;}
+	84% {color: purple;}
+	100%{color: SlateBlue;}
+}
+h1.front {
+	text-align: center;
+	font-family: 'Leckerli One';
+	font-size: 150px; 
+	color: SlateBlue;
+	margin-top: 0%;
+	position: relative;
+	animation-name: colorfade;
+	animation-duration:8s;
+	animation-iteration-count: infinite;
+}
+h2.banner{
+	text-align: center;
+	font-family: 'Leckerli One';
+	font-size: 100px; 
+	color: Pink;
+	margin-bottom: 0%;
+	/*-webkit-text-stroke: 1.5px White;*/
+}
+ol.instructions {
+	font-family: 'Medula One';
+	font-size: 30px;
+	/*list-style-image: url("/resources/images/vn.png");*/
+	list-style-type: decimal;
+	background-image: url("/resources/images/sakura2.png");
+	opacity: 0.95;
+	border: 2px solid pink;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	padding-left: 5%;
+}
+ul.ingredients {
+	font-family: 'Medula One';
+	font-size: 30px;
+	/*list-style-image: url("/resources/images/vn.png");*/
+	list-style-type:square;
+	background-image: url("/resources/images/sakura2.png");
+	opacity: 0.95;
+	border: 2px solid pink;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding-left: 8%;
+}
+h2.large {
+	font-family: 'Medula One';
+	font-size: 90px;
+	width: 100%;
+	color: Pink;
+	text-align: center;
+	/*-webkit-text-stroke: 2px white;*/
+}
+p.frontpage {
+	font-family: 'Medula One';
+	font-size: 50px;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+}
+a.logo{
+	text-decoration: none;
+}
+a.link, a.link:visited {
+	font-family: 'Medula One';
+	font-size: 50px;
+	border-radius: 5px;
+	margin-top: 10px;
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a.link:hover, a.link:active {
+    background-color: SlateBlue;
+}
+div.generic{
+	font-family: 'Medula One';
+	font-size: 3em;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: relative;
+	text-align: center;
+}
+div.clear{
+	clear: left;
+}	
+img.example {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid pink;
+	border-radius: 10px;
+	width: 70%;
+	height: auto;
+}
+
+img.example:hover {
+	opacity: 0.9;
+}
+img.imgcalendar{
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	border: 1px solid pink;
+	border-radius: 4px;
+
+}
+.center {
+	position: relative;
+	text-align: center;
+}
+.month {
+	font-family: 'Medula One';
+	font-size: 20px;
+    padding:15px 0px;
+    width: 100%;
+    background: pink;
+    text-align: center;
+}
+
+.month ul {
+	font-family: 'Medula One';
+    margin: 0;
+    padding: 0;
+}
+div.calendar{
+	margin: 0px 20%;
+}
+.month ul li {
+	font-family: 'Medula One';
+    color: White;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.weekdays {
+	font-family: 'Medula One';
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+}
+
+.weekdays li {
+	font-family: 'Medula One';
+	font-size: 30px;
+    display: inline-block;
+    width: 13.3%;
+    color: pink;
+    text-align: center;
+}
+
+.days {
+	font-family: 'Medula One';
+    padding: 10px 10px;
+    background: #f8f8f8;
+    margin: 0;
+}
+
+.days li {
+	font-family: 'Medula One';
+    list-style-type: none;
+    display: inline-block;
+    width: 7.6vw;
+	height: 7vw;
+    text-align: left;
+    margin-bottom: 3px;
+    font-size: 32px;
+    color: #777;
+	border: 1px solid darkgray;
+	position: relative;
+}
+
+.days li:hover{
+	background: #fcfcfc;
+}
+li.recipes{
+	font-family: 'Leckerli One';
+	font-size: 80px; 
+	color: Pink;
+	margin-top: 1%;
+	/*-webkit-text-stroke: 1.5px White;*/
+	background-image: url("/resources/images/sakura2.png");
+	opacity: 0.95;
+	border: 2px solid pink;
+	border-radius: 5px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:850px) {
+    .weekdays li, .days li {width: 12.7%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.0%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 310px) {
+    .weekdays li, .days li {width: 11.5%;}
+}
+ul.navbar {
+	display: inline-block;
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    position: relative;
+	border: 2px solid pink;
+	border-radius: 5px;
+}
+
+li.navbar {
+    float: left;
+	font-family:'Medula One';
+	font-size: 50px;
+    display: block;
+
+    text-align: center;
+
+}
+
+li.navbar a {
+	color: pink;
+	padding: 0px 16px;
+    text-decoration: none;
+}
+li.navbar a:hover{
+    background-color: #f0f0f0;
+}
+a.indexlink{
+	color:inherit;
+	/*-webkit-text-stroke: 3px pink;*/
+	text-decoration: none;
+}
+a.recipelink{
+	color:inherit;
+	/*-webkit-text-stroke: 2px white;*/
+	text-decoration: none;
+}
+@media only screen and (max-width: 1024px){
+	h1.front{
+		font-size: 110px;
+	}
+	h2.banner{
+		font-size: 70px;
+	}
+	ol.instructions{
+		font-size: 20px;
+	}
+	ul.ingredients{
+		font-size: 20px;
+	}
+	h2.large {
+		font-size: 70px;
+	}
+	p.frontpage{
+		font-size: 30px;
+	}
+	a.link{
+		font-size: 30px;
+		padding: 5px;
+	}
+	.days li {
+		font-size: 25px;
+	}
+	.weekdays li {
+		font-size: 30px;
+	}
+	li.recipes{
+		font-size: 60px;
+	}
+	.month ul li {
+		font-size: 40px;
+	}
+	.weekdays li {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 720px){
+	h1.front{
+		font-size: 70px;
+	}
+	h2.banner{
+		font-size: 50px;
+	}
+	ol.instructions{
+		font-size: 20px;
+	}
+	ul.ingredients{
+		font-size: 20px;
+	}
+	h2.large {
+		font-size: 50px;
+	}
+	p.frontpage{
+		font-size: 25px;
+	}
+	a.link{
+		font-size: 25px;
+		padding: 5px;
+	}
+	.days li {
+		font-size: 15px;
+	}
+	li.recipes{
+		font-size: 40px;
+	}
+	li.navbar{
+		font-size: 30px;
+	}
+	.month ul li {
+		font-size: 25px;
+		padding: 0px 10px;
+	}
+}
+@media only screen and (max-width: 450px){
+	.days li{
+		font-size: 10px;
+	}
+	h1.front{
+		font-size: 45px;
+	}
+	h2.banner{
+		font-size: 35px;
+	}
+	h2.large{
+		font-size: 35px;
+	}
+	
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
