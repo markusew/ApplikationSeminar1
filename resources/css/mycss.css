@@ -371,6 +371,11 @@ a.recipelink{
 	}
 	h2.large{
 		font-size: 35px;
+	ol.instructions{
+		font-size: 13px;
+	}
+	ul.ingredients{
+		font-size: 13px;
 	}
 }
 @keyframes colorfade {
