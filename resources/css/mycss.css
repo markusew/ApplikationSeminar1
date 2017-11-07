@@ -1,5 +1,15 @@
+@keyframes colorfade {
+	0%  {color: SlateBlue;}
+	14% {color: red;}
+	28% {color: orange;}
+	42% {color: yellow;}
+	56% {color: green;}
+	70% {color: blue;}
+	84% {color: purple;}
+	100%{color: SlateBlue;}
+}
 body {
-	background-image: url("/resources/images/sakura.png");
+	background-image: url("../images/sakura.png");
 	background-repeat: repeat;
 }
 div.layer {
@@ -35,7 +45,7 @@ ol.instructions {
 	font-family: 'Medula One';
 	font-size: 30px;
 	list-style-type: decimal;
-	background-image: url("/resources/images/sakura2.png");
+	background-image: url("../images/sakura2.png");
 	opacity: 0.95;
 	border: 2px solid pink;
 	border-radius: 5px;
@@ -46,7 +56,7 @@ ul.ingredients {
 	font-family: 'Medula One';
 	font-size: 30px;
 	list-style-type: square;
-	background-image: url("/resources/images/sakura2.png");
+	background-image: url("../images/sakura2.png");
 	opacity: 0.95;
 	border: 2px solid pink;
 	border-radius: 5px;
@@ -377,15 +387,5 @@ a.recipelink{
 	ul.ingredients{
 		font-size: 13px;
 	}
-}
-@keyframes colorfade {
-    0%  {color: SlateBlue;}
-    14% {color: red;}
-    28% {color: orange;}
-    42% {color: yellow;}
-	56% {color: green;}
-	70% {color: blue;}
-	84% {color: purple;}
-	100%{color: SlateBlue;}
 }
 
